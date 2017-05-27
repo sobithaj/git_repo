@@ -453,6 +453,17 @@
                             <configLocation>addressbook-build/checkstyle.xml</configLocation>
                         </configuration>
                     </plugin>
+			<plugin>
+    <groupId>net.alchim31.maven</groupId>
+    <artifactId>scala-maven-plugin</artifactId>
+    ...
+    <configuration>
+        <args>
+            <arg>-deprecation</arg>
+            <arg>-feature</arg>
+        </args>
+    </configuration>
+</plugin>
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>findbugs-maven-plugin</artifactId>
